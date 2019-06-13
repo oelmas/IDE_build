@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?pde version="3.5"?>
 
-<product name="ICTerra Medical SDK" uid="customeclipse.example.ide" id="org.eclipse.sdk.ide" application="org.eclipse.ui.ide.workbench" version="1.0.0.qualifier" useFeatures="true" includeLaunchers="true">
+<product
+  name="ICTerra Medical SDK"
+  uid="customeclipse.example.ide"
+  id="org.eclipse.sdk.ide"
+  application="org.eclipse.ui.ide.workbench"
+  version="1.0.0.qualifier"
+  useFeatures="true"
+  includeLaunchers="true">
 
    <aboutInfo>
-      <image path="eclipse_lg.gif"/>
+      <image path="/customeclipse.example.plugin/muge_lg.gif"/>
       <text>
-         %productBlurb
+         Test of About window
       </text>
    </aboutInfo>
 
@@ -38,6 +45,7 @@
    <vm>
    </vm>
 
+
    <plugins>
    </plugins>
 
@@ -57,5 +65,12 @@
       <property name="org.eclipse.ui/org.eclipse.ui.edit.text.encoding" value="UTF-8" />
       <property name="osgi.instance.area.default" value="@user.home/workspace-customide" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>

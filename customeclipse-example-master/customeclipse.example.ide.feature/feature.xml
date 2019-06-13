@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="customeclipse.example.ide.feature"
-      label="Custom Eclipse Project SDK"
+      label="MUGE Medical SDK"
       version="1.0.0.qualifier"
-      provider-name="Lorenzo Bettini">
+      provider-name="ICTerra">
 
    <description url="http://www.example.com/description">
       [Enter Feature Description here.]
@@ -23,5 +23,12 @@
       <import feature="org.eclipse.platform" version="4.4.0.v20140925-0400" match="greaterOrEqual"/>
       <import plugin="org.eclipse.sdk"/>
    </requires>
+   <includes
+         id="customeclipse.example.feature"
+         version="0.0.0"/>
+ 
+   <includes
+         id="org.eclipse.sdk"
+         version="0.0.0"/>
 
 </feature>

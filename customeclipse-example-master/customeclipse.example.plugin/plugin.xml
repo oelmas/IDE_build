@@ -58,5 +58,39 @@
          </toolbar>
       </menuContribution>
    </extension>
+  <!-- <extension
+         point="org.eclipse.core.runtime.products"
+         id="product">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            description="Medical Software Development Kit"
+            name="MUGE - Medical Software Development Kit">
+      </product>
+   </extension>-->
+   <extension
+         id="ide"
+         name="MUGE"
+         point="org.eclipse.core.runtime.products">
+			<product name="MUGE - Medical Software Development Kit" application="org.eclipse.ui.ide.workbench" description="Medical Software Development Kit">
+				<!--<property name="windowImages" value="eclipse.png,eclipse32.png"/>-->
+				<property name="aboutImage" value="/customeclipse.example.plugin/muge_lg.gif"/>
+				<property name="aboutText" value="Test of About window"/> 
+				<!--<property name="appName" value="MUGE"/> -->
+				<!--<property name="preferenceCustomization" value="plugin_customization.ini"/>-->
+			</product>
+</extension>
+   <extension
+         point="org.eclipse.ui.newWizards">
+      <category
+            id="customeclipse.example.category.wizards"
+            name="Custom Wizard">
+      </category>
+      <wizard
+            category="customeclipse.example.category.wizards"
+            class="customeclipse.example.wizard.MugeNew.MugeProjectNewWizard"
+            id="customeclipse.example.wizard.new.muge"
+            name="Muge Project">
+      </wizard>
+   </extension>
 
 </plugin>
